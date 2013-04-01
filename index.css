@@ -1,0 +1,706 @@
+html, body, ul, li, div, table, tbody, td, tr, a, h1, h2, h3, dl, dd, dt, img, p
+{
+	margin: 0;
+	padding: 0;
+}
+li
+{
+	list-style: none;
+}
+img
+{
+	border: none;
+	display: block;
+}
+.clear
+{
+	clear: both;
+}
+body
+{
+	font-family: arial,sans-serif;
+	font-size: 12px;
+	line-height: 21px;
+}
+A
+{
+	color: #999;
+	cursor: pointer;
+	text-decoration: none;
+}
+A:hover
+{
+	color: #fff;
+}
+html, body, #bg, #bg table, #bg td
+{
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+#bg div
+{
+	height: 200%;
+	left: -50%;
+	position: absolute;
+	top: -50%;
+	width: 200%;
+}
+#bg td
+{
+	text-align: center;
+	vertical-align: middle;
+}
+#bg img
+{
+	filter: alpha(opacity=0);
+	margin: 0 auto;
+	min-height: 50%;
+	min-width: 50%;
+	opacity: 0;
+}
+#head
+{
+	background: url("images/logo.png") 0 0 no-repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://radio.sbboy.com/images/logo.png');
+	_ background-image:none;
+	height: 99px;
+	left: 7.8%;
+	position: absolute;
+	text-indent: -999px;
+	top: 6.4%;
+	width: 297px;
+	z-index: 10;
+}
+#bbs, #player-ctrl a, #player-ctrl span, #play-list-head, #play-list-up, #searchlist input, #play-list li div a, #play-regin-open, #play-list-down, .popbox h3 span a, #list-ctrl a
+{
+	background: url("images/smallicon.png") no-repeat;
+	background-image: url("images/smallicon.gif");
+}
+#player-wrap
+{
+	bottom: 75px;
+	left: 200px;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+#nav
+{
+	background-color: #000;
+	filter: alpha(opacity=80);
+	height: 75px;
+	left: -201px;
+	margin-left: 0;
+	opacity: .8;
+	padding-left: 0;
+	position: absolute;
+	text-align: right;
+	width: 200px;
+}
+#nav li
+{
+	color: #999;
+	display: block;
+	padding: 2px 8px 0 0;
+}
+#nav .imp
+{
+	color: #9c651f;
+}
+#bbs
+{
+	background-position: 0 -204px;
+	display: inline;
+	float: left;
+	height: 20px;
+	margin-left: 80px;
+	margin-top: -20px;
+	overflow: hidden;
+	text-indent: 2999px;
+	width: 10px;
+}
+#player
+{
+	background: #333 url("images/band1.png") right top no-repeat;
+	filter: alpha(opacity=50);
+	height: 75px;
+	opacity: .5;
+}
+#player-obj
+{
+	left: 5px;
+	position: absolute;
+	top: 12px;
+}
+#audio-player
+{
+	display: none;
+	filter: alpha(opacity=50);
+	height: 40px;
+	opacity: 0.5;
+	overflow: hidden;
+	width: 309px;
+}
+#player-ctrl
+{
+	background-color: #000;
+	filter: alpha(opacity=40);
+	height: 30px;
+	opacity: .4;
+	padding-left: 5px;
+	width: 304px;
+}
+#player-ctrl a, #player-ctrl span
+{
+	color: #ccc;
+	float: left;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+#player-ctrl a:hover
+{
+	color: #FFF;
+}
+#player-ctrl .pre
+{
+	background-position: -106px 6px;
+	width: 25px;
+}
+#player-obj #player-ctrl .play
+{
+	background-position: -88px 6px;
+}
+#player-ctrl #player-ctrl-play
+{
+	background-position: -45px 7px;
+	margin-left: 10px;
+	margin-right: 9px;
+	width: 18px;
+}
+#player-ctrl .next
+{
+	background-position: -130px 6px;
+	width: 25px;
+}
+#player-ctrl #ct-sound
+{
+	background-position: 0 7px;
+	margin-left: 15px;
+	margin-right: 2px;
+	width: 22px;
+}
+#player-ctrl #volume
+{
+	background-position: -159px 7px;
+	width: 65px;
+}
+#volume span
+{
+	background-position: -225px 7px;
+	height: 30px;
+	width: 9px;
+}
+#announcer
+{
+	position: absolute;
+	right: 200px;
+	top: 12px;
+	width: 250px;
+}
+#announcer #announcer-img
+{
+	border: 1px solid #ccc;
+	display: block;
+	float: left;
+	height: 48px;
+	padding: 4px;
+	width: 48px;
+}
+#announcer #announcer-img img
+{
+	height: 48px;
+	width: 48px;
+}
+#announcer .info
+{
+	margin-left: 65px;
+}
+#announcer .info span
+{
+	color: #aaa;
+	display: block;
+}
+#announcer .info strong
+{
+	color: #fff;
+	display: block;
+}
+#play-list-wrap
+{
+	background-color: #FFF;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	filter: alpha(opacity=80);
+	opacity: .8;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	width: 200px;
+	z-index: 2;
+}
+#play-list-wrap a:hover
+{
+	color: #999;
+}
+#play-list-head
+{
+	background-position: 0 -104px;
+	cursor: default;
+	height: 49px;
+	position: relative;
+}
+#list-ctrl
+{
+	height: 20px;
+	overflow: hidden;
+}
+#list-ctrl a
+{
+	background-position: -16px -72px;
+	display: inline;
+	float: right;
+	height: 13px;
+	margin: 5px 6px 0 0;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 10px;
+}
+.list-nav
+{
+	line-height: 12px;
+	padding: 13px 5px 0;
+}
+.list-nav #play-list-up
+{
+	background-position: 0 -70px;
+	float: right;
+	height: 10px;
+	margin-right: 0;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 16px;
+}
+.list-nav a
+{
+	margin-right: 15px !important;
+	margin-right: 11px;
+}
+#searchlist
+{
+	height: 20px;
+	overflow: hidden;
+}
+#searchlist input
+{
+	background-position: 179px -182px;
+	border: 1px solid #96C6FD;
+	color: #aaa;
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+	margin-top: -1px;
+	padding: 2px 5px 0;
+	top: 50px;
+	width: 188px;
+}
+#audio-list-my
+{
+	border-top: 1px dashed #ccc;
+	margin-right: 20px;
+}
+#play-list
+{
+	height: 240px;
+	overflow: auto;
+	overflow-x: hidden;
+	padding: 5px;
+	position: relative;
+	width: 207px;
+}
+#play-list ul
+{
+	display: none;
+}
+#play-list #play-list-my
+{
+	display: block;
+}
+#play-list li
+{
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	padding: 0 5px;
+	width: 178px;
+}
+#play-list li.over
+{
+	background-color: #CCC;
+}
+#play-list li.playing
+{
+	background-color: #c6f1b8;
+}
+#play-list a
+{
+	color: #666;
+	line-height: 20px;
+}
+#play-list a:hover
+{
+	color: #333;
+}
+#play-list li div
+{
+	display: none;
+	float: right;
+	height: 16px;
+	margin-top: -20px;
+}
+#play-list .default
+{
+	background-position: -32px -30px;
+	float: left;
+	height: 16px;
+	margin-right: 3px;
+	margin-top: 2px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 16px;
+}
+#play-list .fav
+{
+	background-position: 0 -30px;
+	float: left;
+	height: 16px;
+	margin-top: 2px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 16px;
+}
+#play-list .fav1 .fav
+{
+	background-position: -48px -30px;
+	float: left;
+	height: 16px;
+	margin-top: 2px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 16px;
+}
+#play-list a.fav:hover
+{
+	background-position: 0 -46px;
+}
+#play-list a.default:hover
+{
+	background-position: -32px -46px;
+}
+#play-list .fav1 a.fav:hover
+{
+	background-position: -48px -46px;
+}
+#play-list #play-list-my a.fav
+{
+	background-position: -16px -30px;
+}
+#play-list #play-list-my a.fav:hover
+{
+	background-position: -16px -46px;
+}
+#play-list li.over div
+{
+	display: block;
+}
+#play-fwrap
+{
+	filter: alpha(opacity=80);
+	height: 274px;
+	opacity: .8;
+	overflow: hidden;
+	position: relative;
+	top: 48px;
+	width: 202px;
+}
+.play-fwrap
+{
+	background-color: #FFF;
+	border-bottom: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	display: none;
+	height: 260px;
+	padding: 5px;
+	width: 190px;
+}
+.play-fwrap a
+{
+	color: blue;
+	float: left;
+	margin: 0 10px;
+	overflow: hidden;
+	position: relative;
+	width: 38px;
+}
+.play-fwrap a:hover
+{
+	color: #27E;
+}
+.play-fwrap .list a
+{
+	margin: 0 8px;
+	text-align: center;
+	width: 30px;
+}
+.play-fwrap .nav
+{
+	border-top: 1px solid #CCC;
+	bottom: 5px;
+	left: 12px;
+	line-height: 20px;
+	position: absolute;
+	width: 180px;
+}
+.play-fwrap .nav a
+{
+	border: 1px solid #CCC;
+	color: #666;
+	line-height: 18px;
+	margin: 3px 3px 0 7px;
+	text-align: center;
+	width: 25px;
+}
+.play-fwrap .nav a:hover
+{
+	border-color: #27E;
+	color: #27E;
+}
+#play-list-bottom
+{
+	background-color: #CCC;
+	font-family: 宋体;
+	font-size: 11px;
+	height: 20px;
+	line-height: 22px;
+	overflow: hidden;
+	padding: 0 5px;
+}
+#play-list-down
+{
+	background-position: 0 -80px;
+	float: right;
+	height: 10px;
+	margin-top: 5px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 16px;
+}
+#list-bottom-ctrl
+{
+	color: #666;
+}
+#list-bottom-ctrl a
+{
+	color: #888;
+	margin-right: 5px;
+}
+#list-bottom-ctrl a:hover
+{
+	color: #888;
+}
+#play-regin-open
+{
+	background-position: -1px -163px;
+	padding-left: 8px;
+}
+#play-list-mes
+{
+	background-color: #eade9c;
+	bottom: 20px;
+	display: none;
+	left: 0;
+	line-height: 20px;
+	padding: 0 5px;
+	position: absolute;
+	text-align: center;
+	width: 190px;
+}
+.popbox
+{
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	display: none;
+	opacity: .9;
+	oveflow: hidden;
+	padding-bottom: 5px;
+	position: absolute;
+	z-index: 100;
+}
+.popbox h3
+{
+	background-color: #ccc;
+	font-size: 14px;
+	font-weight: 500;
+	padding-left: 5px;
+}
+.popbox h3 span
+{
+	float: right;
+	margin-top: -0px !important; 
+	margin-top: -22px ;
+}
+.popbox h3 span a
+{
+	background-position: -16px -72px;
+	display: inline;
+	float: right;
+	height: 13px;
+	margin: 5px 6px 0 0;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 10px;
+}
+.popbox .con
+{
+	padding: 5px;
+}
+.popbox p
+{
+	margin-bottom: 10px;
+}
+.con .box-con
+{
+	margin: 0 auto;
+	width: 380px;
+}
+.con .left
+{
+	float: left;
+	margin-right: 50px;
+}
+.con .right
+{
+	float: left;
+}
+.con dt
+{
+	font-size: 13px;
+	font-weight: 600;
+}
+.con dd
+{
+	padding-left: 12px;
+}
+.con dd ul
+{
+	margin-bottom: 10px;
+}
+.con .ts
+{
+	margin-top: 30px;
+}
+.con .sm
+{
+	margin-bottom: 0;
+	text-decoration: underline;
+}
+#play-help .sm a
+{
+	color: #333;
+	text-decoration: underline;
+}
+#play-help a
+{
+	color: blue;
+}
+#play-help a:hover, #play-help .sm a:hover
+{
+	color: #27E;
+}
+.con li
+{
+	height: 21px;
+	line-height: 21px;
+	margin-bottom: 0;
+}
+.con li a
+{
+	border-bottom: 1px solid #FFE6BC;
+	color: #E67B1B;
+}
+.con li a:hover
+{
+	color: #5b4119;
+}
+#bbsbox .con
+{
+	height: 240px;
+}
+#bbsbox .bottom
+{
+	bottom: 10px;
+	position: absolute;
+}
+#bbsbox .bottom a, .boxbottom a:hover
+{
+	color: #E67B1B;
+}
+#bbsnotice
+{
+	background-color: #ffdda3;
+	margin: 0;
+	overflow: hidden;
+	padding-left: 8px;
+}
+#bbsnotice a
+{
+	color: #333;
+}
+#bbsnotice a:hover
+{
+	color: #333;
+	text-decoration: underline;
+}
+#alertMes
+{
+	background-color: #FFF;
+	border: 2px solid #333;
+	display: none;
+	height: 65px;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -32px;
+	opacity: .8;
+	position: absolute;
+	top: 40%;
+	width: 200px;
+	z-index: 1000;
+}
+#alertMes td
+{
+	line-height: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+#alertMes img
+{
+	margin: 0 auto;
+}
+*HTML #player-wrap #player
+{
+	background-image: none;
+}
