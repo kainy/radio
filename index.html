@@ -1,174 +1,170 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <title>
-            SbBoy Radio-拾贝网络电台 集众多国内外优秀电台（音乐之声|都市流行|怀旧金曲|猫扑网络电台|QQ音乐电台|各省广播电台|海外电台|BBC）于一身的电台频道聚合器
-        </title>
-        <link rel="icon" href="icon-32.png" sizes="32x32">
-        <link rel="icon" href="icon-64.png" sizes="64x64">
-        <link rel="SHORTCUT ICON" href="favicon.ico">
-        <meta content="广播电台在线收听,在线听广播,海外电台,在线英语广播,BBC在线收听,VOA在线收听,音乐之声,都市流行,怀旧金曲,猫扑网络电台,QQ音乐电台,各省广播电台"
-        name="keywords" />
-        <meta content="在线广播电台收听平台，集众多国内各地区及海外优秀电台于一身，包括各个省份，港澳台，以及国际的电台，无论你喜欢听音乐，还是听资讯，听相声或者学外语，都可以满足你的需求。"
-        name="description" />
-        <link href="index.css" rel="stylesheet" type="text/css" />
-        <script src="sbjquery.js" type="text/javascript">
-        </script>
-        <script src="radioinfo.js" type="text/javascript">
-        </script>
-    </head>
-    
-    <body>
-        <div id="head">
-            <h1>
-                Sbboy Radio
-            </h1>
-            <p>
-                在线广播收听平台，享受听广播的乐趣
-            </p>
-        </div>
-        <div id="player-wrap">
-            <ul id="nav">
-                <li>
-                    <a title="电台列表" href="#" id="play-list-open">
-                        电台列表
-                    </a>
-                </li>
-                <li>
-                    <a title="电台收听说明" href="http://kainy.cn/" id="play-help-open">
-                        使用说明
-                    </a>
-                </li>
-                <li>
-                    <a href="http://Sbboy.COM/Radio/" onclick="window.external.addFavorite(this.href,this.title);return false;"
-                    title='拾贝网络电台' rel="sidebar">
-                        加入收藏
-                    </a>
-                </li>
-            </ul>
-            <div id="player">
-            </div>
-            <div id="player-obj">
-                <div id="audio-player">
-                </div>
-                <div id="player-media-wrap">
-                    <iframe src="player.html" frameborder="0" scrolling="no" marginwidth="0"
-                    marginheight="0" height="18" width="309" name="wmp">
-                    </iframe>
-                    <div id="player-ctrl">
-                        <a onclick="ctrl(3,1)" title="播放上一电台" class="pre">
-                            Pre
-                        </a>
-                        <a onclick="ctrl(1)" title="播放" id="player-ctrl-play">
-                            Play
-                        </a>
-                        <a onclick="ctrl(3)" title="播放下一电台" class="next">
-                            Next
-                        </a>
-                        <a onclick="ctrl(7)" title="静音" id="ct-sound">
-                            Sound
-                        </a>
-                        <span id="volume">
-                            <span style="margin-left:27.5px;">
-                                V
-                            </span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div id="announcer">
-            </div>
-        </div>
-        <div id="play-menu" style="height:339px;position:absolute;z-index:100;right:50px;top:40%;width:404px;margin-top:-169px;display:none;">
-            <div id="play-list-wrap">
-                <div id="play-list-head">
-                    <div id="list-ctrl">
-                        <a id="play-list-close" title="点击关闭">
-                            ×
-                        </a>
-                    </div>
-                    <div class="list-nav">
-                        <a id="play-list-up" title="向上滚动">
-                            ▲
-                        </a>
-                        <div>
-                            <a id="play-list-my-open" title="我收藏的电台">
-                                我的收藏
-                            </a>
-                            <a id="radio-list-open" title="全部电台">
-                                全部电台
-                            </a>
-                            <a id="audio-list-open" title="点播喜欢的节目">
-                                点播
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div id="searchlist" class="subnav">
-                    <input type="text" size="30" value="搜索内容 ENTER提交" />
-                </div>
-                <div id="play-list">
-                    <ul id="play-list-my">
-                        <div id="radio-list-my">
-                        </div>
-                        <div id="audio-list-my">
-                        </div>
-                    </ul>
-                    <ul id="radio-list">
-                    </ul>
-                    <ul id="audio-list">
-                    </ul>
-                </div>
-                <div id="play-list-bottom">
-                    <a id="play-list-down" title="向下滚动">
-                        ▼
-                    </a>
-                    <div id="list-bottom-ctrl">
-                    </div>
-                </div>
-                <div id="play-list-mes">
-                </div>
-            </div>
-            <div id="play-fwrap">
-                <div id="play-regin-wrap" class="play-fwrap">
-                </div>
-                <div id="play-cont-wrap" class="play-fwrap">
-                </div>
-                <div id="audio-cont-wrap" class="play-fwrap">
-                    <div class="list">
-                    </div>
-                    <div class="nav">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="bg">
-            <div>
-                <table cellpadding="0" cellspacing="0">
-                    <tbody>
-                        <tr>
-                            <td>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <script type="text/javascript" src="core.js">
-        </script>
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-6962747-2']);
-            _gaq.push(['_trackPageview']);
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>
+			SbBoy Radio-拾贝网络电台 集众多国内外优秀电台（音乐之声|都市流行|怀旧金曲|猫扑网络电台|QQ音乐电台|各省广播电台|海外电台|BBC）于一身的电台频道聚合器
+		</title>
+		<link rel="icon" href="icon-32.png" sizes="32x32">
+		<link rel="icon" href="icon-64.png" sizes="64x64">
+		<link rel="SHORTCUT ICON" href="favicon.ico">
+		<meta content="广播电台在线收听,在线听广播,海外电台,在线英语广播,BBC在线收听,VOA在线收听,音乐之声,都市流行,怀旧金曲,猫扑网络电台,QQ音乐电台,各省广播电台"
+		name="keywords" />
+		<meta content="在线广播电台收听平台，集众多国内各地区及海外优秀电台于一身，包括各个省份，港澳台，以及国际的电台，无论你喜欢听音乐，还是听资讯，听相声或者学外语，都可以满足你的需求。"
+		name="description" />
+		<meta name="google-site-verification" content="mo6WNGkOXVngDvL8f40eCV-InTHq3tQ234EIoQZZQLo" />
+		<link href="index.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="head">
+			<h1>
+				Sbboy Radio
+			</h1>
+			<p>
+				在线广播收听平台，享受听广播的乐趣
+			</p>
+		</div>
+		<div id="player-wrap">
+			<ul id="nav">
+				<li>
+					<a title="电台列表" href="#" id="play-list-open">
+						电台列表
+					</a>
+				</li>
+				<li>
+					<a title="电台收听说明" href="http://kainy.cn/" id="play-help-open">
+						使用说明
+					</a>
+				</li>
+				<li>
+					<a href="http://Sbboy.COM/Radio/" onclick="window.external.addFavorite(this.href,this.title);return false;"
+					title='拾贝网络电台' rel="sidebar">
+						加入收藏
+					</a>
+				</li>
+			</ul>
+			<div id="player">
+			</div>
+			<div id="player-obj">
+				<div id="audio-player">
+				</div>
+				<div id="player-media-wrap">
+					<iframe src="player.html" frameborder="0" scrolling="no" marginwidth="0"
+					marginheight="0" height="18" width="309" name="wmp">
+					</iframe>
+					<div id="player-ctrl">
+						<a onclick="ctrl(3,1)" title="播放上一电台" class="pre">
+							Pre
+						</a>
+						<a onclick="ctrl(1)" title="播放" id="player-ctrl-play">
+							Play
+						</a>
+						<a onclick="ctrl(3)" title="播放下一电台" class="next">
+							Next
+						</a>
+						<a onclick="ctrl(7)" title="静音" id="ct-sound">
+							Sound
+						</a>
+						<span id="volume">
+							<span style="margin-left:27.5px;">
+								V
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div id="announcer">
+			</div>
+		</div>
+		<div id="play-menu" style="height:339px;position:absolute;z-index:100;right:50px;top:40%;width:404px;margin-top:-169px;display:none;">
+			<div id="play-list-wrap">
+				<div id="play-list-head">
+					<div id="list-ctrl">
+						<a id="play-list-close" title="点击关闭">
+							×
+						</a>
+					</div>
+					<div class="list-nav">
+						<a id="play-list-up" title="向上滚动">
+							▲
+						</a>
+						<div>
+							<a id="play-list-my-open" title="我收藏的电台">
+								我的收藏
+							</a>
+							<a id="radio-list-open" title="全部电台">
+								全部电台
+							</a>
+							<a id="audio-list-open" title="点播喜欢的节目">
+								点播
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id="searchlist" class="subnav">
+					<input type="text" size="30" value="搜索内容 ENTER提交" />
+				</div>
+				<div id="play-list">
+					<ul id="play-list-my">
+						<div id="radio-list-my">
+						</div>
+						<div id="audio-list-my">
+						</div>
+					</ul>
+					<ul id="radio-list">
+					</ul>
+					<ul id="audio-list">
+					</ul>
+				</div>
+				<div id="play-list-bottom">
+					<a id="play-list-down" title="向下滚动">
+						▼
+					</a>
+					<div id="list-bottom-ctrl">
+					</div>
+				</div>
+				<div id="play-list-mes">
+				</div>
+			</div>
+			<div id="play-fwrap">
+				<div id="play-regin-wrap" class="play-fwrap">
+				</div>
+				<div id="play-cont-wrap" class="play-fwrap">
+				</div>
+				<div id="audio-cont-wrap" class="play-fwrap">
+					<div class="list">
+					</div>
+					<div class="nav">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bg">
+			<div>
+				<table cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<td>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script src="sbjquery.js" type="text/javascript"></script>
+		<script src="radioinfo.js" type="text/javascript"></script>
+		<script type="text/javascript" src="core.js"></script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-6962747-2']);
+			_gaq.push(['_trackPageview']);
 
-            (function() {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl': 'http://www') + '.google-analytics.com/ga.js'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
-            })();
-        </script>
-    </body>
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl': 'http://www') + '.google-analytics.com/ga.js'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+			})();
+		</script>
+	</body>
 </html>
