@@ -115,7 +115,7 @@ html, body, #bg, #bg table, #bg td
 	float: left;
 	height: 20px;
 	margin-left: 80px;
-	margin-top: -20px;
+	*margin-top: -20px;
 	overflow: hidden;
 	text-indent: 2999px;
 	width: 10px;
@@ -296,7 +296,6 @@ html, body, #bg, #bg table, #bg td
 }
 .list-nav a
 {
-	margin-right: 15px !important;
 	margin-right: 11px;
 }
 #searchlist
@@ -316,6 +315,7 @@ html, body, #bg, #bg table, #bg td
 	padding: 2px 5px 0;
 	top: 50px;
 	width: 188px;
+	*margin-top: -1px;
 }
 #audio-list-my
 {
@@ -369,7 +369,7 @@ html, body, #bg, #bg table, #bg td
 	display: none;
 	float: right;
 	height: 16px;
-	margin-top: -20px;
+	*margin-top: -20px;
 }
 #play-list .default
 {
@@ -560,8 +560,7 @@ html, body, #bg, #bg table, #bg td
 .popbox h3 span
 {
 	float: right;
-	margin-top: -0px !important; 
-	margin-top: -22px ;
+	*margin-top: -22px;
 }
 .popbox h3 span a
 {
