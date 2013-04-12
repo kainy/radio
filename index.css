@@ -267,6 +267,7 @@ html, body, #bg, #bg table, #bg td
 {
 	height: 20px;
 	overflow: hidden;
+	cursor: move;
 }
 #list-ctrl a
 {
@@ -556,6 +557,7 @@ html, body, #bg, #bg table, #bg td
 	font-size: 14px;
 	font-weight: 500;
 	padding-left: 5px;
+	cursor: move;
 }
 .popbox h3 span
 {
