@@ -619,11 +619,6 @@ html, body, #bg, #bg table, #bg td
 	margin-bottom: 0;
 	text-decoration: underline;
 }
-#play-help .sm a
-{
-	color: #333;
-	text-decoration: underline;
-}
 #play-help a
 {
 	color: blue;
