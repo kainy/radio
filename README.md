@@ -6,6 +6,8 @@
 
 简约、时尚、个性化一直是我们所追求的目标，希望拾贝电台能给您的广播生活带来不一样的体验，让我们一起 “享受听广播的乐趣” 。
 
+Chrome 网上应用店安装：[Chrome 网上应用店安装](https://chrome.google.com/webstore/detail/拾贝电台/bhcbhdhdggalgngebimnmphddjnjffdo?hl=zh-CN?from=radio.sbboy.com)
+
 ## 快捷键 ##
 
 - `Home` 设为默认主题
@@ -25,11 +27,11 @@
 ##插件##
 
 - exe安装包：[WMP Plugin (Firefox/safari/Chrome/opera)](http://radio.sbboy.com/wmpfirefoxplugin.zip)
-- crx安装包：[Chrome 网上应用店安装](https://chrome.google.com/webstore/detail/拾贝电台/bhcbhdhdggalgngebimnmphddjnjffdo?hl=zh-CN?from=radio.sbboy.com)
+- crx安装包：[WMP Plugin (crx)](http://radio.sbboy.com/wmpfirefoxplugin.zip)
 
 
 
 
 ## 兼容信息 ##
 
-IE5.5+，Firefox，Safari，Chorme，Opera
+IE5.5+，Firefox，Safari，Chorme，Opera 。
